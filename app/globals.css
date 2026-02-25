@@ -16,10 +16,10 @@
 
   /* Brand Colors */
   --primary: #191973;
-  --primary-foreground: #ffffff;
+  --primary-foreground: #ffffff;/* Adjusted for better contrast */
 
   --secondary: #ec2127;
-  --secondary-foreground: #ffffff;
+  --secondary-foreground: #fdf5f5; /* Adjusted for better contrast */
 
   /* Neutral */
   --muted: #f5f5f5;
@@ -69,7 +69,7 @@
   --popover-foreground: #ffffff;
 
   --primary: #191973;
-  --primary-foreground:#191973;
+  --primary-foreground:#ffffff;
 
   --secondary: #ec2127;
   --secondary-foreground: #ffffff;

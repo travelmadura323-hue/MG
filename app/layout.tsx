@@ -4,6 +4,7 @@ import { Analytics } from "@vercel/analytics/next"
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
 import { EnquiryProviderWrapper } from "@/components/enquiry-provider-wrapper"
+import { DashboardProvider } from "@/lib/dashboard-context"
 import "./globals.css"
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
@@ -30,11 +31,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} ${playfair.variable} font-sans antialiased`}>
-        <EnquiryProviderWrapper>
-          <SiteHeader />
-          <main>{children}</main>
-          <SiteFooter />
-        </EnquiryProviderWrapper>
+        <DashboardProvider>
+          <EnquiryProviderWrapper>
+            <SiteHeader />
+            <main>{children}</main>
+            <SiteFooter />
+          </EnquiryProviderWrapper>
+        </DashboardProvider>
         <Analytics />
       </body>
     </html>
