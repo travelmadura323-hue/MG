@@ -48,7 +48,8 @@
   --sidebar: #ffffff;
   --sidebar-foreground: #000000;
   --sidebar-primary: #191973;
-  --sidebar-primary-foreground: #ffffff;
+  --sidebar-primary-foreground: #191973
+  ;
   --sidebar-accent: #ec2127;
   --sidebar-accent-foreground: #ffffff;
   --sidebar-border: #000000;
@@ -68,7 +69,7 @@
   --popover-foreground: #ffffff;
 
   --primary: #191973;
-  --primary-foreground: #333333;
+  --primary-foreground:#191973;
 
   --secondary: #ec2127;
   --secondary-foreground: #ffffff;

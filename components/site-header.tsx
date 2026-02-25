@@ -104,28 +104,16 @@ export function SiteHeader() {
 {/* Main nav */}
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         <Link href="/" className="flex items-center gap-2">
-          {/* <div className={cn(
-            "flex h-10 w-10 items-center justify-center rounded-xl font-serif text-lg font-bold",
-            scrolled ? "bg-primary text-primary-foreground" : "bg-primary-foreground/20 text-primary-foreground backdrop-blur-sm"
-          )}>
-            M
-          </div> */}
           <div className="flex items-center">
-       <Image
-    src="/images/2(1).png"  // change if your file name is different
-    alt="/images/2(1).png"
-    width={140}
-    height={40}
-    className="object-contain"
-    priority
-  />
-</div>
-          <span className={cn(
-            "font-serif text-xl font-bold tracking-tight",
-            scrolled ? "text-foreground" : "text-primary-foreground"
-          )}>
-           Madura Global
-          </span>
+            <Image
+              src="/images/logo.png"
+              alt="Madura Travel Service Logo"
+              width={120}
+              height={120}
+              className="object-contain h-16 w-auto"
+              priority
+            />
+          </div>
         </Link>
 
         {/* Desktop Menu */}
