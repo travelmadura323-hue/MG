@@ -43,6 +43,24 @@ export interface Tour {
   excluded: string[]
 }
 
+export interface Destination {
+  slug: string
+  name: string
+  region: string
+  duration: string
+  priceRange: string
+  image: string
+  description: string
+  overview: string
+  minAge: string
+  travelers: string
+  bestTime: string
+  attractions: string[]
+  accommodations: string[]
+  itinerary: { day: string; activities: string }[]
+  createdAt: string
+}
+
 export const popularTours: Tour[] = [
   {
     slug: "enchanting-bali",
