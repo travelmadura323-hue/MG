@@ -64,7 +64,7 @@ export function SiteHeader() {
         scrolled ? "max-h-0 border-transparent" : "max-h-12 border-primary-foreground/10"
       )}>
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-2 text-sm">
-          <div className={cn("flex items-center gap-4", scrolled ? "text-muted-foreground" : "text-primary-foreground/80")}>
+          <div className={cn("flex items-center gap-4", scrolled ? "text-muted-foreground" : "text-primary/80")}>
             <span className="flex items-center gap-1"><Phone className="h-3 w-3" />+61 434 500 743</span>
             <span className="hidden md:inline">|</span>
             <span className="hidden md:inline">guru@maduraglobal.com</span>
@@ -81,7 +81,7 @@ export function SiteHeader() {
         "flex items-center gap-2 cursor-pointer",
         scrolled
           ? "text-muted-foreground"
-          : "text-primary-foreground/80"
+          : "text-primary/80"
       )}
     >
       <Globe className="h-4 w-4" />
@@ -128,7 +128,7 @@ export function SiteHeader() {
               "flex items-center gap-1 rounded-lg px-4 py-2 text-sm font-medium transition-colors",
               scrolled
                 ? "text-foreground hover:bg-secondary"
-                : "text-primary-foreground/90 hover:text-primary-foreground"
+                : "text-primary/90 hover:text-primary"
             )}>
               Company <ChevronDown className="h-3.5 w-3.5" />
             </button>
@@ -164,7 +164,7 @@ export function SiteHeader() {
               "flex items-center gap-1 rounded-lg px-4 py-2 text-sm font-medium transition-colors",
               scrolled
                 ? "text-foreground hover:bg-secondary"
-                : "text-primary-foreground/90 hover:text-primary-foreground"
+                : "text-primary/90 hover:text-primary"
             )}>
               Categories <ChevronDown className="h-3.5 w-3.5" />
             </button>
@@ -200,7 +200,7 @@ export function SiteHeader() {
               "flex items-center gap-1 rounded-lg px-4 py-2 text-sm font-medium transition-colors",
               scrolled
                 ? "text-foreground hover:bg-secondary"
-                : "text-primary-foreground/90 hover:text-primary-foreground"
+                : "text-primary/90 hover:text-primary"
             )}>
               Destinations <ChevronDown className="h-3.5 w-3.5" />
             </button>
@@ -252,7 +252,7 @@ export function SiteHeader() {
               "rounded-lg px-4 py-2 text-sm font-medium transition-colors",
               scrolled
                 ? "text-foreground hover:bg-secondary"
-                : "text-primary-foreground/90 hover:text-primary-foreground"
+                : "text-primary/90 hover:text-primary"
             )}
           >
             MICE
@@ -264,7 +264,7 @@ export function SiteHeader() {
               "rounded-lg px-4 py-2 text-sm font-medium transition-colors",
               scrolled
                 ? "text-black hover:bg-secondary"
-                : "text-primary-foreground/90 hover:text-primary-foreground"
+                : "text-primary/90 hover:text-primary"
             )}
           >
             Contact Us
@@ -278,20 +278,18 @@ export function SiteHeader() {
           </button>
         </div>
 
-        {/* Mobile Toggle */}
-        <button
-          className={cn("lg:hidden rounded-lg p-2", scrolled ? "text-foreground" : "text-primary-foreground")}
-          onClick={() => setMobileOpen(!mobileOpen)}
-          aria-label="Toggle navigation"
-        >
-          {mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-        </button>
-      </nav>
+        {/* Mobile Menu */}
+        <div className="flex items-center gap-4 lg:hidden">
+          <button
+            onClick={() => setMobileOpen(!mobileOpen)}
+            className="p-2"
+          >
+            {mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          </button>
+        </div>
 
-      {/* Mobile Menu */}
-      {mobileOpen && (
-        <div className="border-t border-border bg-card lg:hidden">
-          <div className="max-h-[80vh] overflow-y-auto px-6 py-4">
+        {mobileOpen && (
+          <div className="absolute left-0 right-0 top-full border-t border-border bg-card px-6 py-4 lg:hidden">
             {/* Company */}
             <button
               onClick={() => setMobileExpanded(mobileExpanded === "company" ? null : "company")}
@@ -369,8 +367,8 @@ export function SiteHeader() {
               Enquire Now
             </button>
           </div>
-        </div>
-      )}
+        )}
+      </nav>
     </header>
   )
 }

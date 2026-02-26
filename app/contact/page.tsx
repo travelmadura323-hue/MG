@@ -53,7 +53,7 @@ export default function ContactPage() {
           <div className="overflow-hidden rounded-2xl border border-border">
             <iframe
               title="Office location"
-              src="https://maps.app.goo.gl/8NuYXXXNLuQ2m96X6"
+              src="https://maps.app.goo.gl/LH575pPAWU8c2Yof7"
               width="100%"
               height="100%"
               style={{ border: 0, minHeight: 480 }}

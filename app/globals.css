@@ -12,11 +12,11 @@
   --card-foreground: #000000;
 
   --popover: #ffffff;
-  --popover-foreground: #000000;
+  --popover-foreground: #0000000;
 
   /* Brand Colors */
   --primary: #191973;
-  --primary-foreground: #ffffff;/* Adjusted for better contrast */
+  --primary-foreground: #dcd5d5;/* Adjusted for better contrast */
 
   --secondary: #ec2127;
   --secondary-foreground: #fdf5f5; /* Adjusted for better contrast */
@@ -69,7 +69,8 @@
   --popover-foreground: #ffffff;
 
   --primary: #191973;
-  --primary-foreground:#ffffff;
+  --primary-foreground:#ffffff
+  ;
 
   --secondary: #ec2127;
   --secondary-foreground: #ffffff;
