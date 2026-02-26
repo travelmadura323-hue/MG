@@ -15,10 +15,11 @@
   --popover-foreground: #0000000;
 
   /* Brand Colors */
-  --primary: #191973;
-  --primary-foreground: #dcd5d5;/* Adjusted for better contrast */
+  --primary: #191975;
+  --primary-foreground:
+  #ffffff;/* Adjusted for better contrast */
 
-  --secondary: #ec2127;
+  --secondary: #cc1715;
   --secondary-foreground: #fdf5f5; /* Adjusted for better contrast */
 
   /* Neutral */

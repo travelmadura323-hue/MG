@@ -25,7 +25,7 @@ export function HeroSection() {
         sizes="100vw"
       />
       {/* Dark overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-primary/80 via-primary/50 to-primary/80" />
+      <div className="absolute inset-0 bg-gradient-to-b from-white/70 via-white/40 to-white/70" />
 
       {/* Content */}
       <div className="relative z-10 mx-auto max-w-5xl px-6 py-32 text-center">
@@ -34,13 +34,13 @@ export function HeroSection() {
             visible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
           }`}
         >
-          <span className="inline-block rounded-full border border-primary-foreground/20 bg-primary-foreground/10 px-5 py-2 text-sm font-medium tracking-wide text-primary-foreground backdrop-blur-sm">
+          <span className="inline-block rounded-full border border-primary-foreground/20 bg-primary-foreground/10 px-5 py-2 text-sm font-medium tracking-wide text-[#cc1715] backdrop-blur-sm">
             Your Journey Begins Here
           </span>
         </div>
 
         <h1
-          className={`mt-8 font-serif text-5xl font-bold leading-tight tracking-tight text-primary-foreground md:text-7xl transition-all duration-1000 delay-200 text-balance ${
+          className={`mt-8 font-serif text-5xl font-bold leading-tight tracking-tight text-[#cc1715] md:text-7xl transition-all duration-1000 delay-200 text-balance ${
             visible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
           }`}
         >
@@ -50,7 +50,9 @@ export function HeroSection() {
         </h1>
 
         <p
-          className={`mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-primary-foreground/80 md:text-xl transition-all duration-1000 delay-400 text-pretty ${
+          className={`mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-[#191975]/80 md:text-xl transition-all duration-1000 delay-400 text-pretty
+            style={{ fontFamily: "Arial, sans-serif" }}
+             ${
             visible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
           }`}
         >
