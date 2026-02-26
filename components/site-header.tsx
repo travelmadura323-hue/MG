@@ -105,14 +105,14 @@ export function SiteHeader() {
         <div className="hidden items-center gap-1 lg:flex">
           {/* Company Dropdown */}
           <div className="relative" onMouseEnter={() => handleMouseEnter("company")} onMouseLeave={handleMouseLeave}>
-            <button className={cn("flex items-center gap-1 px-4 py-2 text-sm font-medium", scrolled ? "text-foreground" : "text-primary/90")}>
+            <button className={cn("flex items-center gap-1 px-4 py-2 text-sm font-medium", scrolled ? "text-primary" : "text-primary/90")}>
               Company <ChevronDown className="h-3.5 w-3.5" />
             </button>
             {activeDropdown === "company" && (
               <div className="absolute left-0 top-full pt-2">
                 <div className="w-56 rounded-xl border bg-card p-2 shadow-xl">
                   {companyLinks.map((link) => (
-                    <Link key={link.name} href={link.href} className="block px-4 py-2 text-sm hover:bg-secondary rounded-lg">
+                    <Link key={link.name} href={link.href} className="block px-4 py-2 text-sm rounded-lg">
                       {link.name}
                     </Link>
                   ))}
@@ -120,10 +120,41 @@ export function SiteHeader() {
               </div>
             )}
           </div>
+          <div
+  className="relative"
+  onMouseEnter={() => handleMouseEnter("categories")}
+  onMouseLeave={handleMouseLeave}
+>
+  <button
+    className={cn(
+      "flex items-center gap-1 rounded-lg px-4 py-2 text-sm font-medium transition-colors",
+      scrolled
+        ? "text-primary "
+        : "text-primary/90 "
+    )}
+  >
+    Categories <ChevronDown className="h-3.5 w-3.5" />
+  </button>
 
+  {activeDropdown === "categories" && (
+    <div className="absolute left-0 top-full pt-2">
+      <div className="w-56 rounded-xl border bg-white p-2 shadow-xl">
+        {categories.map((cat) => (
+          <Link
+            key={cat.slug}
+            href={`/categories/${cat.slug}`}
+            className="block px-4 py-2 text-sm rounded-lg text-black hover:bg-secondary"
+          >
+            {cat.name}
+          </Link>
+        ))}
+      </div>
+    </div>
+  )}
+</div>
           {/* Destinations Mega Menu */}
           <div className="relative" onMouseEnter={() => handleMouseEnter("destinations")} onMouseLeave={handleMouseLeave}>
-            <button className={cn("flex items-center gap-1 px-4 py-2 text-sm font-medium", scrolled ? "text-foreground" : "text-primary/90")}>
+            <button className={cn("flex items-center gap-1 px-4 py-2 text-sm font-medium", scrolled ? "text-primary" : "text-primary/90")}>
               Destinations <ChevronDown className="h-3.5 w-3.5" />
             </button>
             {activeDropdown === "destinations" && (
@@ -134,7 +165,7 @@ export function SiteHeader() {
                       <h4 className="mb-2 text-xs font-bold uppercase text-accent">{region}</h4>
                       <div className="flex flex-col gap-1">
                         {places.slice(0, 5).map(place => (
-                          <Link key={place} href={`/destinations/${toSlug(place)}`} className="text-sm hover:text-accent">
+                          <Link key={place} href={`/destinations/${toSlug(place)}`} className="text-sm hover:bg-secondary">
                             {place}
                           </Link>
                         ))}
@@ -146,8 +177,8 @@ export function SiteHeader() {
             )}
           </div>
 
-          <Link href="/mice" className="px-4 py-2 text-sm font-medium">MICE</Link>
-          <Link href="/contact" className="px-4 py-2 text-sm font-medium">Contact Us</Link>
+          <Link href="/mice" className="px-4 py-2 text-primary/90   text-sm font-medium">MICE</Link>
+          <Link href="/contact" className="px-4 py-2 text-primary/90  text-sm font-medium">Contact Us</Link>
           <button onClick={() => openEnquiry()} className="ml-4 rounded-xl bg-accent px-5 py-2.5 text-sm font-semibold text-accent-foreground">
             Enquire Now
           </button>
