@@ -74,7 +74,7 @@ export function HeroSection() {
           </Link>
           <Link
             href="/contact"
-            className="flex items-center gap-2 rounded-xl border border-primary-foreground/30 bg-primary-foreground/10 px-8 py-4 text-sm font-semibold text-primary-foreground backdrop-blur-sm transition-all hover:bg-primary-foreground/20"
+            className="flex items-center gap-2 rounded-xl border border-[#333333]/30 bg-primary-foreground/10 px-8 py-4 text-sm font-semibold text-[#191975] backdrop-blur-sm transition-all hover:bg-primary-foreground/20"
           >
             <Play className="h-4 w-4" />
             Book Now
@@ -94,8 +94,8 @@ export function HeroSection() {
             { number: "40+", label: "Years of Excellence" },
           ].map((stat) => (
             <div key={stat.label} className="text-center">
-              <div className="font-serif text-3xl font-bold text-accent md:text-4xl">{stat.number}</div>
-              <div className="mt-1 text-xs tracking-wider text-primary-foreground/60 uppercase">{stat.label}</div>
+              <div className="font-arial text-3xl font-bold text-[#191975] md:text-4xl ">{stat.number}</div>
+              <div className="mt-2 text-xs tracking-wider text-gray-900/60 uppercase">{stat.label}</div>
             </div>
           ))}
         </div>
