@@ -83,7 +83,7 @@ export function HeroSection() {
 
         {/* Stats row */}
         <div
-          className={`mt-16 grid grid-cols-3 gap-6 transition-all duration-1000 delay-700 ${
+          className={`mt-16 grid grid-cols-4 gap-6 transition-all duration-1000 delay-700 ${
             visible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
           }`}
         >
