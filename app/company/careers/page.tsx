@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 import { MapPin, Briefcase, Clock } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Careers | Wanderlux Travel",
+  title: "Careers | Madura Global",
   description: "Join our team and help create extraordinary travel experiences.",
 }
 
@@ -26,7 +26,7 @@ export default function CareersPage() {
         </div>
       </div>
 
-      <div className="mx-auto max-w-4xl px-6 py-16">
+      {/* <div className="mx-auto max-w-4xl px-6 py-16">
         <h2 className="font-serif text-2xl font-bold text-foreground">Open Positions</h2>
         <div className="mt-8 flex flex-col gap-4">
           {openings.map((job) => (
@@ -41,10 +41,120 @@ export default function CareersPage() {
               <button className="mt-4 rounded-xl bg-accent px-5 py-2.5 text-sm font-semibold text-accent-foreground transition-all hover:brightness-110">
                 Apply Now
               </button>
-            </div>
-          ))}
+            </div> */}
+            
+          {/* ))}
+        </div> */}
+        <section className="py-12">
+  <div className="container mx-auto px-4 max-w-3xl">
+    <h2 className="text-3xl font-bold mb-6 text-center">Join Our Team</h2>
+
+    <form className="space-y-6">
+
+      {/* Name */}
+      <div>
+        <label className="block font-medium mb-1">Full Name *</label>
+        <input
+          type="text"
+          placeholder="Your full name"
+          className="w-full border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          required
+        />
+      </div>
+
+      {/* Phone */}
+      <div>
+        <label className="block font-medium mb-1">Phone Number *</label>
+        <input
+          type="tel"
+          placeholder="e.g., +91 9876543210"
+          className="w-full border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          required
+        />
+      </div>
+
+      {/* Email */}
+      <div>
+        <label className="block font-medium mb-1">Email *</label>
+        <input
+          type="email"
+          placeholder="your@email.com"
+          className="w-full border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          required
+        />
+      </div>
+
+      {/* Educational Qualification */}
+      <div>
+        <label className="block font-medium mb-1">Educational Qualification</label>
+        <input
+          type="text"
+          placeholder="e.g., B.Tech, MBA, etc."
+          className="w-full border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+      </div>
+
+      {/* Role */}
+      <div>
+        <label className="block font-medium mb-1">Role *</label>
+        <input
+          type="text"
+          placeholder="e.g., Travel Consultant, Marketing Executive"
+          className="w-full border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          required
+        />
+      </div>
+
+      {/* Experience Level */}
+      <div>
+        <label className="block font-medium mb-2">Experience Level *</label>
+        <div className="flex items-center gap-6">
+          <label className="flex items-center gap-2 cursor-pointer">
+            <input type="radio" name="experience" value="Fresher" required />
+            Fresher
+          </label>
+
+          <label className="flex items-center gap-2 cursor-pointer">
+            <input type="radio" name="experience" value="Experienced" />
+            Experienced
+          </label>
         </div>
       </div>
-    </div>
-  )
+
+      {/* About Yourself */}
+      <div>
+        <label className="block font-medium mb-1">Brief About Yourself</label>
+        <textarea
+          rows={4}
+          placeholder="Tell us about yourself, your skills, and why you want to join us..."
+          className="w-full border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        ></textarea>
+      </div>
+
+      {/* Resume Upload */}
+      <div>
+        <label className="block font-medium mb-1">Resume or CV *</label>
+        <input
+          type="file"
+          className="w-full border rounded-lg p-3 bg-gray-50 focus:outline-none"
+          required
+        />
+      </div>
+
+      {/* Submit Button */}
+      <div className="text-center">
+        <button
+          type="submit"
+          className="px-8 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition"
+        >
+          Submit Application
+        </button>
+      </div>
+
+    </form>
+  </div>
+</section>
+  //     </div>
+  //   </div>
+   )
 }

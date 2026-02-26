@@ -2,6 +2,8 @@ import type { Metadata } from "next"
 import Image from "next/image"
 import { Award, Globe, Users, Heart } from "lucide-react"
 
+
+
 export const metadata: Metadata = {
   title: "Our Story | Madura Global",
   description: "Learn about Madura Global's journey from a small travel desk to a premium global travel agency.",
@@ -170,6 +172,7 @@ Your premier choice for unforgettable travel experiences backed by 39 years of e
 
   </div>
 </section>
+
       </div>
     </div>
   )
