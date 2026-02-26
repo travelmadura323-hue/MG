@@ -4,6 +4,7 @@ import { useEffect, useState } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { ArrowRight, Play } from "lucide-react"
+import CountUp from "react-countup";
 
 export function HeroSection() {
   const [visible, setVisible] = useState(false)
@@ -88,25 +89,35 @@ export function HeroSection() {
           }`}
         >
           {[
-            { number: "200K+", label: "Tour Packages" },
-            { number: "28K+", label: "Destinations" },
-            { number: "4M+", label: "Happy Travelers" },
-            { number: "40+", label: "Years of Excellence" },
-          ].map((stat) => (
-            <div key={stat.label} className="text-center">
-              <div className="font-arial text-3xl font-bold text-[#191975] md:text-4xl ">{stat.number}</div>
-              <div className="mt-2 text-xs tracking-wider text-gray-900/60 uppercase">{stat.label}</div>
-            </div>
-          ))}
+  { number: 200, suffix: "K+", label: "Tour Packages" },
+  { number: 28, suffix: "K+", label: "Destinations" },
+  { number: 4, suffix: "M+", label: "Happy Travelers" },
+  { number: 40, suffix: "+", label: "Years of Excellence" },
+].map((stat) => (
+  <div key={stat.label} className="text-center">
+    <div className="font-arial text-3xl font-bold text-[#191975] md:text-4xl">
+      <CountUp
+        end={stat.number}
+        duration={3}
+        enableScrollSpy
+        scrollSpyDelay={200}
+      />
+      {stat.suffix}
+    </div>
+    <div className="mt-2 text-xs tracking-wider text-gray-900/60 uppercase">
+      {stat.label}
+    </div>
+  </div>
+))}
         </div>
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2">
+      {/* <div className="absolute bottom-8 left-1/2 -translate-x-1/2">
         <div className="flex h-10 w-6 items-start justify-center rounded-full border-2 border-primary-foreground/30 p-1.5">
           <div className="h-2 w-1 animate-bounce rounded-full bg-primary-foreground/60" />
-        </div>
-      </div>
+        </div> */}
+      {/* </div> */}
     </section>
   )
 }

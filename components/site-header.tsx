@@ -6,6 +6,7 @@ import { Menu, X, ChevronDown, ChevronRight, Globe, Phone } from "lucide-react"
 import { destinations, categories, toSlug } from "@/lib/data"
 import { cn } from "@/lib/utils"
 import { useEnquiry } from "@/components/enquiry-modal"
+import { useSearchParams } from "next/navigation";
  import {
   DropdownMenu,
   DropdownMenuContent,
@@ -206,7 +207,7 @@ export function SiteHeader() {
             </button>
             <div
               className={cn(
-                "fixed left-1/2 top-full -translate-x-1/2 pt-2 transition-all duration-200",
+                "absolute left-1/2 top-full -translate-x-1/2 pt-2 transition-all duration-200",
                 activeDropdown === "destinations"
                   ? "pointer-events-auto translate-y-0 opacity-100"
                   : "pointer-events-none -translate-y-2 opacity-0"
@@ -240,8 +241,8 @@ export function SiteHeader() {
                         )}
                       </div>
                     </div>
-                  ))}
-                </div>
+  ))}
+</div>
               </div>
             </div>
           </div>

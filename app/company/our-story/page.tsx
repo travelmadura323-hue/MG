@@ -26,35 +26,150 @@ export default function OurStoryPage() {
           </p>
         </div>
       </div>
+      <section className="py-16 bg-gray-50">
+  <div className="max-w-7xl mx-auto px-6">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+      {/* Vision */}
+      <div className="bg-white rounded-2xl shadow-md p-8 text-center hover:shadow-xl transition duration-300">
+        <div className="w-14 h-14 mx-auto mb-6 flex items-center justify-center bg-blue-100 rounded-full text-2xl">
+          👁️
+        </div>
+        <h3 className="text-2xl font-semibold text-blue-900 mb-4">
+          Our Vision
+        </h3>
+        <p className="text-gray-600 leading-relaxed">
+          To be the foremost global travel company, enriching lives through unforgettable experiences and pioneering innovation in the travel industry.
+        </p>
+      </div>
+
+      {/* Mission */}
+      <div className="bg-white rounded-2xl shadow-md p-8 text-center hover:shadow-xl transition duration-300">
+        <div className="w-14 h-14 mx-auto mb-6 flex items-center justify-center bg-blue-100 rounded-full text-2xl">
+          🏆
+        </div>
+        <h3 className="text-2xl font-semibold text-blue-900 mb-4">
+          Our Mission
+        </h3>
+        <p className="text-gray-600 leading-relaxed">
+          Strive to cultivate meaningful connections, promote cultural understanding, and foster sustainable tourism practices while delivering unparalleled value to our clients.
+        </p>
+      </div>
+
+      {/* Core Values */}
+      <div className="bg-white rounded-2xl shadow-md p-8 text-center hover:shadow-xl transition duration-300">
+        <div className="w-14 h-14 mx-auto mb-6 flex items-center justify-center bg-blue-100 rounded-full text-2xl">
+          ⚛️
+        </div>
+        <h3 className="text-2xl font-semibold text-blue-900 mb-4">
+          Our Core Values
+        </h3>
+        <p className="text-gray-600 leading-relaxed">
+          Embracing innovation, prioritizing honesty, accountability, and professionalism while fostering inclusivity and teamwork.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
 
       <div className="mx-auto max-w-7xl px-6 py-16">
         <div className="grid items-center gap-12 lg:grid-cols-2">
           <div>
-            <h2 className="font-serif text-3xl font-bold text-foreground">A Journey of Passion and Purpose</h2>
-            <p className="mt-4 leading-relaxed text-muted-foreground">
-              Founded in 1986, Madura Global began as a small travel desk with a bold vision: to make extraordinary travel experiences accessible to everyone. What started with a team of three passionate travel enthusiasts has grown into a premium travel agency with offices across the globe.
-            </p>
-            <p className="mt-4 leading-relaxed text-muted-foreground">
-              Over the years, we have crafted thousands of bespoke itineraries, taking our travelers to the most breathtaking corners of the world. Our commitment to personalized service, attention to detail, and creating lasting memories has made us a trusted name in the travel industry.
-            </p>
-            <p className="mt-4 leading-relaxed text-muted-foreground">
-              Today, Madura Global continues to push boundaries, exploring new destinations, forging partnerships with the finest hotels and airlines, and constantly innovating to deliver unparalleled travel experiences.
-            </p>
+            <h4 className="font-Arial text-3xl font-bold text-foreground">Discover about
+Madura Travel Service (P) Ltd</h4>
+          <h6 className="text-3xl  text-primary">
+ Establishment
+</h6>
+
+<p className="mt-4 leading-relaxed text-muted-foreground">
+  The journey of our company commenced on January 17th, 1986, right in the heart of Chennai Egmore, nestled within the vibrant state of Tamil Nadu, India. It marked the inception of a visionary's dream, dedicated to delivering authentic travel services to our valued customers.
+
+</p>
+            <h6 className="text-3xl  text-primary">
+ Awards & Recognition
+</h6>
+
+<p className="mt-4 leading-relaxed text-muted-foreground">
+  Over the years, our company has earned recognition from numerous esteemed government and private institutions. Notably, we are honored to have received the prestigious Kalaimamani Award from the Government of Tamil Nadu, a testament to our commitment and excellence in the travel industry. We take pride in being the sole recipient of the Kalaimamani Award within the entire travel fraternity. Additionally, our achievements include securing two Limca Records for orchestrating the largest cultural groups from India to destinations worldwide, and pioneering the entry into the digital market during the early 2000s. Furthermore, we have consistently ranked as a top seller for various airlines, including Air India, Oman Air, Jet Airways, SriLankan Airlines, among others.
+</p>
+           <h6 className="text-3xl  text-primary">
+  Travel & Visa
+</h6>
+
+<p className="mt-4 leading-relaxed text-muted-foreground">
+Your trusted travel partner in seamless travel experiences for over 39 years. Established in 1986, we have been committed to providing unparalleled service for both international and domestic Air Ticketing, Train and bus Services & Cruise Transport and expertise in visa facilitation for across 195 Countries.</p>
+ <h6 className="text-3xl  text-primary">
+Tourism and Ancillary Services
+</h6>
+
+<p className="mt-4 leading-relaxed text-muted-foreground">
+Your premier choice for unforgettable travel experiences backed by 39 years of expertise and the esteemed approval of the Ministry of Tourism, Government of India. We have been dedicated to curating exceptional journeys for millions of passengers including Families, Honeymooners, Corporate & Business travellers, Solo Travellers, Student Educational Trips and many more.</p>
           </div>
-          <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
-            <Image src="/images/tours/bali.jpg" alt="Our team on a tour" fill className="object-cover" sizes="(max-width: 1024px) 100vw, 50vw" />
+          <div className="relative  w-full h-[800px] overflow-hidden rounded-2xl">
+            <Image src="/images/bali.png" alt="Our team on a tour" fill className="object-cover" sizes="(max-width: 1024px) 100vw, 50vw" />
           </div>
         </div>
-
+        <section>
+        <div className="mt-16 text-center">
+    <p className="text-sm font-semibold text-accent uppercase tracking-wider">
+      Experience. Quality. Trust.
+    </p>
+    <h2 className="mt-2 text-4xl font-bold text-[#cc1715] md:text-5xl">
+      Why Choose Us?
+    </h2>
+    <p className="mt-4 max-w-2xl mx-auto text-muted-foreground">
+      Join millions of happy travelers who trust Madura Travel Service...
+    </p>
+  </div>
         <div className="mt-20 grid gap-6 md:grid-cols-4">
           {stats.map((stat) => (
             <div key={stat.label} className="rounded-2xl border border-border bg-card p-8 text-center">
               <stat.icon className="mx-auto h-8 w-8 text-accent" />
-              <div className="mt-3 font-serif text-3xl font-bold text-card-foreground">{stat.value}</div>
+              <div className="mt-3 font-arial text-3xl font-bold text-card-foreground">{stat.value}</div>
               <div className="mt-1 text-sm text-muted-foreground">{stat.label}</div>
             </div>
           ))}
         </div>
+        </section>
+       <section className="py-20 bg-white">
+  <div className="max-w-7xl mx-auto px-6">
+
+    {/* 🔹 Heading Section */}
+    <div className="text-center mb-14">
+      <h4 className="text-sm font-semibold tracking-widest text-[#cc1715] uppercase mb-3">
+        Our Esteemed Clients
+      </h4>
+
+      <h2 className="text-3xl md:text-4xl font-bold text-[#191975] mb-4">
+        Trusted by the Best
+      </h2>
+
+      <p className="max-w-3xl mx-auto text-gray-600 text-lg leading-relaxed">
+        Join millions of happy travelers who trust Madura Travel Service (P) Ltd., 
+        one of India’s leading travel companies, for exceptional tour planning 
+        and unforgettable journeys.
+      </p>
+    </div>
+
+    {/* 🔹 Image Grid */}
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+      {Array.from({ length: 40 }).map((_, index) => (
+        <div
+          key={index}
+          className="bg-gray-50 rounded-xl p-6 flex items-center justify-center hover:shadow-md transition"
+        >
+          <img
+            src={`/images/gallery/img-${index + 1}.jpg`}
+            alt={`Client ${index + 1}`}
+            className="max-h-28 object-contain"
+          />
+        </div>
+      ))}
+    </div>
+
+  </div>
+</section>
       </div>
     </div>
   )

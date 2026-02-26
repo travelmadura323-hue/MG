@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import { Star } from "lucide-react"
 
+
 export const metadata: Metadata = {
   title: "Testimonials | Madura Global",
   description: "Hear from our happy travelers about their Madura Global experiences.",
